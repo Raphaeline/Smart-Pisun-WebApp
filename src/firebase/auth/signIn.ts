@@ -17,3 +17,5 @@ export default async function signIn(email: string, password: string) {
 
   return { result, error }; // Return the sign-in result and error (if any)
 }
+
+
