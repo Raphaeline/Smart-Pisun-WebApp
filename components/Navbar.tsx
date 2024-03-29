@@ -26,7 +26,7 @@ const Navbar = ({ isDashboardPage, isProdukPage, isAdminPage }: { isDashboardPag
           </a>
         </li>
         <li>
-          <a className="flex px-[28px] py-[14px] 2xl:py-[20px]" href="/admin">
+          <a className="flex px-[28px] py-[14px] 2xl:py-[20px]" href="#">
             <img src={isAdminPage ? "/admin_blue.svg" : "/admin.svg"} className="w-[18px] 2xl:w-[28px]" />
             <p className="text-[#000000] font-poppins text-[16px] 2xl:text-[20px] px-[6px]">Admin</p>
           </a>
@@ -37,6 +37,11 @@ const Navbar = ({ isDashboardPage, isProdukPage, isAdminPage }: { isDashboardPag
             <p className="text-[#000000] font-poppins text-[16px] 2xl:text-[20px] px-[6px]">Bantuan</p>
           </a>
         </li>
+        <div className="flex px-[28px] py-[14px] 2xl:py-[20px]">
+          <a className=" bg-[#FF5C5C] hover:bg-[#FF5C5C] py-[9px] 2xl:py-[12px] px-[22px] 2xl:px-[30px] rounded-md font-poppins text-[14px] 2xl:text-[16px] drop-shadow hover:drop-shadow-md hover:shadow-lg" href="/">
+            Logout
+          </a>
+        </div>
       </ul>
     </nav>
   );
